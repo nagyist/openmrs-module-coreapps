@@ -14,3 +14,7 @@ jobs:
       java_versions: '[8]'
       main_java_version: '8'
       run_owasp_check: false
+    secrets:
+      NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+      MAVEN_REPO_USERNAME: ${{ secrets.MAVEN_REPO_USERNAME }}
+      MAVEN_REPO_API_KEY: ${{ secrets.MAVEN_REPO_API_KEY }}
