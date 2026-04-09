@@ -164,7 +164,7 @@ public class VisitsSectionFragmentController {
 
 		// if this server supports more than one facility (ie visit location), then we show the visit location when we display the visit
 		boolean showVisitLocation = false;
-		LocationTag visitLocationTag = emrApiProperties.getSupportsAdmissionLocationTag();
+		LocationTag visitLocationTag = emrApiProperties.getSupportsVisitsLocationTag();
 		if (visitLocationTag != null) {
 			List<Location> visitLocations = (locationService.getLocationsByTag(visitLocationTag));
 			if (visitLocations != null && visitLocations.size() > 1) {
